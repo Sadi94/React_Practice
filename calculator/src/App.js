@@ -111,7 +111,7 @@ function evaluate({ currentOperand, previousOperand, operation }) {
     case "-":
       computation = prev - current
       break
-    case "*":
+    case "x":
       computation = prev * current
       break
     case "÷":
@@ -159,7 +159,7 @@ function App() {
       <DigitButton digit="1" dispatch={dispatch} />
       <DigitButton digit="2" dispatch={dispatch} />
       <DigitButton digit="3" dispatch={dispatch} />
-      <OperationButton operation="*" dispatch={dispatch} />
+      <OperationButton operation="x" dispatch={dispatch} />
       <DigitButton digit="4" dispatch={dispatch} />
       <DigitButton digit="5" dispatch={dispatch} />
       <DigitButton digit="6" dispatch={dispatch} />
